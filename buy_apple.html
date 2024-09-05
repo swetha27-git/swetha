@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Apple</title>
+    <link rel="stylesheet" href="buy_apple.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buy Fresh Apples</h1>
+
+        <!-- Apple List -->
+        <div class="apple-list">
+            <h2>Select Apple Type</h2>
+            <div class="apple-item">
+                <input type="radio" id="braeburn" name="apple" value="Braeburn">
+                <label for="braeburn">Braeburn</label>
+            </div>
+            <div class="apple-item">
+                <input type="radio" id="fuji" name="apple" value="Fuji">
+                <label for="fuji">Fuji</label>
+            </div>
+            <div class="apple-item">
+                <input type="radio" id="gala" name="apple" value="Gala">
+                <label for="gala">Gala</label>
+            </div>
+            <div class="apple-item">
+                <input type="radio" id="golden-delicious" name="apple" value="Golden Delicious">
+                <label for="golden-delicious">Golden Delicious</label>
+            </div>
+            <div class="apple-item">
+                <input type="radio" id="granny-smith" name="apple" value="Granny Smith">
+                <label for="granny-smith">Granny Smith</label>
+            </div>
+            <div class="apple-item">
+                <input type="radio" id="honeycrisp" name="apple" value="Honeycrisp">
+                <label for="honeycrisp">Honeycrisp</label>
+            </div>
+            <div class="apple-item">
+                <input type="radio" id="mcintosh" name="apple" value="McIntosh">
+                <label for="mcintosh">McIntosh</label>
+            </div>
+            <div class="apple-item">
+                <input type="radio" id="red-delicious" name="apple" value="Red Delicious">
+                <label for="red-delicious">Red Delicious</label>
+            </div>
+        </div>
+
+        <!-- Number of Apples -->
+        <div class="quantity-section">
+            <label for="apple-quantity">Enter Number of Apples:</label>
+            <input type="number" id="apple-quantity" name="apple-quantity" min="1" value="1">
+        </div>
+
+        <!-- Order Button -->
+        <div class="order-section">
+            <button id="orderButton">Place Order</button>
+        </div>
+
+        <!-- Confirmation Message -->
+        <div id="confirmationMessage" style="display:none;">
+            <h2>Your order is placed!</h2>
+        </div>
+    </div>
+
+    <script src="buy_apple.js"></script>
+</body>
+</html>

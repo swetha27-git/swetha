@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.apple-list {
+    margin-top: 20px;
+}
+
+.apple-item {
+    margin: 10px 0;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.quantity-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quantity-section label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.quantity-section input {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.order-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#confirmationMessage {
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+    font-size: 20px;
+}

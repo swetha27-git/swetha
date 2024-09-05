@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="/login" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required 
+                       pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&#]).{10,}" 
+                       title="Username must be at least 10 characters long, including letters, numbers, and symbols.">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required 
+                           pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&#]).{10,}" 
+                           title="Password must be at least 10 characters long, including letters, numbers, and symbols.">
+                    <span id="togglePassword" class="eye-icon">&#128065;</span>
+                </div>
+            </div>
+            
+                <!-- Form Fields -->
+                <button type="button" class="login-button" onclick="login()">Login</button>
+            
+        </form>
+    </div>
+    
+    
+    <script src="validation.js"></script>
+</body>
+</html>
